@@ -11,7 +11,8 @@ const Navbar = ()=>{
     const Links = [
         {title: "Home", path:'/'},
         {title:"About", path:'/about'},
-        {title:"Service", path: '/service'}
+        {title:"Service", path: '/service'},
+        {title:"Meals", path: "/meals"}
     ]
 
     const handler = ()=>{
@@ -24,6 +25,7 @@ const Navbar = ()=>{
                 {Links.map((link)=> <Link key={link.path} href={link.path} 
                 title={link.title} className="text-white">{link.title}</Link>)}
             </ul>
+            
             </div>
         </div>
     )
